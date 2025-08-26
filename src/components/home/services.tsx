@@ -1,9 +1,15 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { Badge } from "../ui/badge";
 import ServiceCard from "./service-card";
+import { Button } from "../ui/button";
+import { MoveRight, Package, HardHat, Component } from "lucide-react";
 
 const Services = () => {
+  const router = useRouter();
   return (
-    <div className="space-y-10 2xl:space-y-16 3xl:space-y-20 py-10 2xl:py-16 3xl:py-20 px-6 md:px-10 lg:px-26 2xl:px-54">
+    <div className="space-y-10 2xl:space-y-16 3xl:space-y-20 py-20 2xl:py-16 3xl:py-20 px-6 md:px-10 lg:px-26 2xl:px-54">
       <div className="flex flex-row justify-between items-end w-full">
         <div className="space-y-4 2xl:space-y-6 3xl:space-y-8">
           <Badge variant={"amg"}>Service</Badge>
@@ -24,6 +30,7 @@ const Services = () => {
       {/* Service Items */}
       <div className="grid grid-cols-3 gap-6 2xl:gap-8 3xl:gap-12">
         <ServiceCard
+          Icon={HardHat}
           bgColor="#f9fafb"
           imageUrl="https://plus.unsplash.com/premium_photo-1682148205811-e8a8ce759f4b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHNvbGFyJTIwcGFuZWxzJTIwb24lMjBob3VzZXN8ZW58MHx8MHx8fDA%3D"
         >
@@ -36,6 +43,7 @@ const Services = () => {
 
         {/* Service 2 */}
         <ServiceCard
+          Icon={Component}
           bgColor="bg-gray-50"
           imageUrl="https://plus.unsplash.com/premium_photo-1678766819199-5660bab7085b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdvcmtpbmclMjBpbiUyMGVsZWN0cmljJTIwY29udHJvbCUyMHBhbmVsfGVufDB8fDB8fHww"
         >
@@ -48,6 +56,7 @@ const Services = () => {
 
         {/* Service 3 */}
         <ServiceCard
+          Icon={Package}
           bgColor="bg-gray-50"
           imageUrl="https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg"
         >
@@ -58,6 +67,15 @@ const Services = () => {
           </div>
         </ServiceCard>
       </div>
+
+      <Button
+        variant={"amg"}
+        onClick={() => router.push("/about")}
+        className={"mx-auto flex flex-row gap-2 items-center"}
+      >
+        <p>Learn More</p>
+        <MoveRight size={20} />
+      </Button>
     </div>
   );
 };

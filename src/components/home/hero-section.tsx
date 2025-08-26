@@ -18,10 +18,7 @@ const HeroSection = () => {
       </div>
 
       <div className="flex flex-col w-fit gap-6 2xl:gap-8 3xl:gap-10">
-        <Button
-          size={"lg"}
-          className="bg-main-300/90 text-main-900 hover:bg-main-400/90 transition-all duration-200 text-base 2xl:text-lg 3xl:text-xl px-8 py-3 2xl:px-10 2xl:py-4 3xl:px-12 3xl:py-5"
-        >
+        <Button variant={"amg"} size={"lg"}>
           Get Started
         </Button>
         <div className="flex flex-row items-center gap-4 2xl:gap-6 3xl:gap-8">

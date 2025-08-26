@@ -5,6 +5,7 @@ import HeroSection from "@/components/home/hero-section";
 import AboutUsSection from "@/components/home/aboutus-section";
 import ProductSection from "@/components/home/product-section";
 import NewsSection from "@/components/home/news-section";
+import ContactSection from "@/components/home/contact-section";
 
 export default function Home() {
   return (
@@ -27,8 +28,10 @@ export default function Home() {
       </div>
 
       <ProductSection />
-
-      <NewsSection />
+      <div className="bg-gray-50">
+        <NewsSection />
+      </div>
+      <ContactSection />
       <Footer />
     </div>
   );

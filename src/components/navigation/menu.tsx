@@ -29,7 +29,7 @@ const MenuBar = () => {
             <div
               onClick={() => router.push(items.url)}
               className={cn(
-                "flex flex-row items-center gap-1 cursor-pointer hover:text-main-500 transition-all ease-in-out duration-200"
+                "flex flex-row items-center gap-1 cursor-pointer transition-all ease-in-out duration-200"
               )}
               key={index}
             >
@@ -40,7 +40,7 @@ const MenuBar = () => {
                   <span className="relative inline-flex size-2 2xl:size-3 3xl:size-4 rounded-full bg-main-200"></span>
                 </span>
               )}
-              <p className="font-semibold text-white text-sm 2xl:text-base 3xl:text-lg">
+              <p className="font-semibold text-white hover:text-main-300 text-sm 2xl:text-base 3xl:text-lg">
                 {items.title}
               </p>
             </div>
@@ -48,13 +48,7 @@ const MenuBar = () => {
       </div>
 
       <div className="ml-auto">
-        <Button
-          className={
-            "bg-main-300/90 rounded-full text-main-900 text-sm 2xl:text-base 3xl:text-lg px-4 py-2 2xl:px-6 2xl:py-3 3xl:px-8 3xl:py-4"
-          }
-        >
-          Contact Us
-        </Button>
+        <Button variant={"amg"}>Contact Us</Button>
       </div>
     </div>
   );

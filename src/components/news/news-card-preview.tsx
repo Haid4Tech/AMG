@@ -62,7 +62,9 @@ const NewsCardPreview: FC<INewsCardPreview> = ({
           </p>
         </div>
         <button
-          className={"cursor-pointer rounded-full p-4 2xl:p-6 bg-main-300/80"}
+          className={
+            "cursor-pointer rounded-full p-4 2xl:p-6 bg-main-300/80 hover:bg-main-300/70 transition-all ease-in-out duration-200"
+          }
           onClick={() => router.push(url ?? "")}
         >
           <MoveUpRight size={18} />

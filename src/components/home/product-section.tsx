@@ -1,7 +1,11 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import ProductPreviewCard from "../product/product-preview-card";
 import { MoveUpRight } from "lucide-react";
 
 const ProductSection = () => {
+  const router = useRouter();
   return (
     <div
       className={
@@ -22,6 +26,7 @@ const ProductSection = () => {
             }
           ></div>
           <div
+            onClick={() => router.push("/products")}
             className={
               "group transition-all ease-in-out hover:bg-main-800 p-3 w-full flex flex-col justify-between cursor-pointer row-span-1 bg-main-300/20 rounded-lg"
             }
@@ -45,13 +50,13 @@ const ProductSection = () => {
 
       <ProductPreviewCard
         imageUrl="/products/solar_lil.png"
-        title="Solar Project 1"
+        title="Solar Product 1"
         description="Description for Solar Project 1"
       />
 
       <ProductPreviewCard
         imageUrl="/products/solar2.png"
-        title="Solar Project 2"
+        title="Solar Product 2"
         description="Description for Solar Project 2"
       />
     </div>

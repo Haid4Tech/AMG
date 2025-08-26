@@ -24,7 +24,7 @@ const NewsSection = () => {
     },
   ];
   return (
-    <div className="space-y-10 px-6 md:px-10 lg:px-26 2xl:px-54 py-10">
+    <div className="space-y-10 px-6 md:px-10 lg:px-26 2xl:px-54 py-20">
       <div className="flex flex-row items-center justify-between">
         <div className="space-y-4">
           <Badge variant={"amg"}>News</Badge>
@@ -32,7 +32,7 @@ const NewsSection = () => {
             AMG News
           </p>
         </div>
-        <Button className="flex flex-row gap-2 items-center bg-main-300/90 text-main-900 hover:bg-main-400/90 transition-all duration-200 text-sm 2xl:text-lg 3xl:text-xl">
+        <Button variant={"amg"} className="flex flex-row gap-2 items-center">
           <p>See All News</p>
           <MoveRight size={18} />
         </Button>

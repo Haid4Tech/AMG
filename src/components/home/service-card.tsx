@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { MoveUpRight } from "lucide-react";
+import { MoveUpRight, LucideIcon } from "lucide-react";
 
 interface IServiceCard {
   imageUrl: string;
@@ -9,6 +9,7 @@ interface IServiceCard {
     xl?: string;
     xxl?: string;
   };
+  Icon: LucideIcon;
   children?: React.ReactNode;
 }
 
@@ -19,6 +20,7 @@ const ServiceCard: FC<IServiceCard> = ({
     xl: "2xl:h-[400px]",
     xxl: "3xl:h-[500px]",
   },
+  Icon,
   children,
 }) => {
   return (
@@ -33,7 +35,7 @@ const ServiceCard: FC<IServiceCard> = ({
       <div className="m z-20"></div>
 
       <button className="z-30 absolute bottom-0 right-0 cursor-pointer rounded-full p-4 2xl:p-6 bg-main-300/80">
-        <MoveUpRight />
+        <Icon />
       </button>
 
       {/* Content above gradient but below the inverted cut */}
