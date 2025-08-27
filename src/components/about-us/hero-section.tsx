@@ -12,7 +12,9 @@ const AboutUsHeroSection = () => {
         )}
       >
         <p className="text-center text-4xl md:text-5xl lg:text-7xl 2xl:text-9xl 3xl:text-8xl leading-[1.1] font-bold text-main-50/80 drop-shadow-lg">
-          Achieving a Greener World Together
+          Achieving a{" "}
+          <span className="text-main-300 uppercase">Greener World</span>{" "}
+          Together
         </p>
         <Leaf className={"text-main-300 w-45 h-45"} />
       </div>

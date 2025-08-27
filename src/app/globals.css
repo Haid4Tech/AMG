@@ -16,6 +16,17 @@
   --color-main-800: var(--main-800);
   --color-main-900: var(--main-900);
 
+  --secondary-50: var(--secondary-50);
+  --secondary-100: var(--secondary-100);
+  --secondary-200: var(--secondary-200);
+  --secondary-300: var(--secondary-300);
+  --secondary-400: var(--secondary-400);
+  --secondary-500: var(--secondary-500);
+  --secondary-600: var(--secondary-600);
+  --secondary-700: var(--secondary-700);
+  --secondary-800: var(--secondary-800);
+  --secondary-900: var(--secondary-900);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -68,6 +79,17 @@
   --main-800: oklch(0.2575 0.0637 154.95);
   --main-900: oklch(0.2433 0.0597 155.39);
 
+  --secondary-50: oklch(0.9623 0.0212 51.53);
+  --secondary-100: oklch(0.8892 0.0661 51.83);
+  --secondary-200: oklch(0.8207 0.1125 51.03);
+  --secondary-300: oklch(0.7594 0.1573 49.11);
+  --secondary-400: oklch(0.7082 0.1948 44.74);
+  --secondary-500: oklch(0.6872 0.209694 41.419);
+  --secondary-600: oklch(0.5305 0.158455 42.5491);
+  --secondary-700: oklch(0.4185 0.121854 43.9499);
+  --secondary-800: oklch(0.295 0.082074 46.6516);
+  --secondary-900: oklch(0.2324 0.0608 50.78);
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -113,6 +135,17 @@
   --main-200: oklch(0.3402 0.0582 157.61);
   --main-100: oklch(0.2575 0.0637 154.95);
   --main-50: oklch(0.2433 0.0597 155.39);
+
+  --secondary-900: oklch(0.9623 0.0212 51.53);
+  --secondary-800: oklch(0.8892 0.0661 51.83);
+  --secondary-700: oklch(0.8207 0.1125 51.03);
+  --secondary-600: oklch(0.7594 0.1573 49.11);
+  --secondary-500: oklch(0.7082 0.1948 44.74);
+  --secondary-400: oklch(0.6872 0.209694 41.419);
+  --secondary-300: oklch(0.5305 0.158455 42.5491);
+  --secondary-200: oklch(0.4185 0.121854 43.9499);
+  --secondary-100: oklch(0.295 0.082074 46.6516);
+  --secondary-50: oklch(0.2324 0.0608 50.78);
 
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
       "plus.unsplash.com",
       "fra1.digitaloceanspaces.com",
       "via.placeholder.com",
+      "destinyimpactchurch.org",
     ].map((hostname) => ({
       protocol: "https",
       hostname,

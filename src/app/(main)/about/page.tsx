@@ -1,10 +1,12 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { pagePadding } from "@/common/styles";
+import { Badge } from "@/components/ui/badge";
 import MenuBar from "@/components/navigation/menu";
 import HeroLayout from "@/components/general/hero-layout";
 import AboutUsHeroSection from "@/components/about-us/hero-section";
-import { pagePadding } from "@/common/styles";
-import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
+
+import CoreValues from "@/components/about-us/core-values";
 
 export default function AboutPage() {
   return (
@@ -17,17 +19,17 @@ export default function AboutPage() {
 
       {/* Company Overview */}
       <div className={cn(pagePadding)}>
-        <div className="flex flex-col items-center justify-center space-y-4 w-fit border border-red-600 px-5 lg:px-20 2xl:px-32">
+        <div className="flex flex-col items-center justify-center py-20 space-y-6 px-3 md:px-8 lg:px-20 2xl:px-32">
           <Badge variant={"amg"}>Our story</Badge>
           <div className="space-y-6">
-            <p className="text-center text-base lg:text-xl 2xl:text-xl  text-main-700 leading-relaxed">
+            <p className="text-justify text-base lg:text-xl 2xl:text-2xl  text-main-700 leading-relaxed">
               Founded with a vision to bring sustainable energy solutions to
               Africa, AMG Energy Storage has grown from a local startup to a
               leading distributor of solar energy solutions across the
               continent. Our commitment to quality and innovation has made us a
               trusted name in renewable energy technology.
             </p>
-            <p className="text-center text-base lg:text-xl 2xl:text-xl text-main-700 leading-relaxed">
+            <p className="text-justify text-base lg:text-xl 2xl:text-2xl text-main-700 leading-relaxed">
               We specialize in the production and distribution of advanced
               battery storage systems, high-efficiency solar panels, and
               innovative energy management solutions designed specifically for
@@ -37,8 +39,12 @@ export default function AboutPage() {
         </div>
       </div>
 
+      <div className={"bg-gray-50"}>
+        <CoreValues />
+      </div>
+
       {/* Key Products */}
-      <div className="space-y-6">
+      <div className={cn(pagePadding, "space-y-6 border  border-red-500")}>
         <h3 className="text-2xl font-bold text-main-900">Key Products</h3>
         <div className="space-y-4">
           <div className="flex items-start gap-3">
