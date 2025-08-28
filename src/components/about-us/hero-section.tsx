@@ -8,7 +8,7 @@ const AboutUsHeroSection = () => {
       <div
         className={cn(
           pagePadding,
-          "flex flex-row items-end border border-red-500 backdrop-blur-xs rounded-lg p-4"
+          "flex flex-row items-end backdrop-blur-xs rounded-lg p-4"
         )}
       >
         <p className="text-center text-4xl md:text-5xl lg:text-7xl 2xl:text-9xl 3xl:text-8xl leading-[1.1] font-bold text-main-50/80 drop-shadow-lg">

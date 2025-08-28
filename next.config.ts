@@ -7,11 +7,12 @@ const nextConfig: NextConfig = {
   },
   images: {
     remotePatterns: [
+      "fra1.digitaloceanspaces.com",
+      "destinyimpactchurch.org",
+      "via.placeholder.com",
       "images.unsplash.com",
       "plus.unsplash.com",
-      "fra1.digitaloceanspaces.com",
-      "via.placeholder.com",
-      "destinyimpactchurch.org",
+      "images.pexels.com",
     ].map((hostname) => ({
       protocol: "https",
       hostname,

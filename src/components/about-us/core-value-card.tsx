@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 interface CoreValuesCardProps {
@@ -6,6 +7,7 @@ interface CoreValuesCardProps {
   label: string;
   description: string;
   cover: string;
+  className?: string;
 }
 
 const CoreValuesCard: FC<CoreValuesCardProps> = ({
@@ -17,9 +19,9 @@ const CoreValuesCard: FC<CoreValuesCardProps> = ({
   return (
     <div className={"grid grid-cols-3 gap-5"}>
       <div
-        className={
-          "flex flex-col justify-center col-span-2 space-y-6 border-t-2 border-main-900 py-5"
-        }
+        className={cn(
+          "flex flex-col justify-center col-span-2 space-y-6 border-t-1 border-main-900 py-5"
+        )}
       >
         <p className="text-main-600 italic">{slug}</p>
         <div className="space-y-3">

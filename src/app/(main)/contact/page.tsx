@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import HeroLayout from "@/components/general/hero-layout";
+import MenuBar from "@/components/navigation/menu";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -31,6 +33,14 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <HeroLayout
+        bgImage={
+          "https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg"
+        }
+      >
+        <MenuBar />
+      </HeroLayout>
+
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-main-50 to-main-100 py-20 px-6 md:px-10 lg:px-26 2xl:px-54">
         <div className="max-w-6xl mx-auto text-center space-y-8">
