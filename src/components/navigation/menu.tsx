@@ -48,7 +48,9 @@ const MenuBar = () => {
       </div>
 
       <div className="ml-auto">
-        <Button variant={"amg"}>Contact Us</Button>
+        <Button onClick={() => router.push("/contact")} variant={"amg"}>
+          Contact Us
+        </Button>
       </div>
     </div>
   );
