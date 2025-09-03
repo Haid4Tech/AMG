@@ -95,6 +95,53 @@ export default function ProductsPage() {
         <ProductHeroSection />
       </HeroVideoLayout>
 
+      {/* Product Categories */}
+      <div className={cn(pagePadding, "space-y-12")}>
+        <h3 className="font-bold text-5xl text-center">
+          What Kinds of Products Do we have
+        </h3>
+        <div className={"grid grid-cols-2 gap-6"}>
+          <div className="space-y-6 rounded-[2rem] p-5">
+            <h1 className="font-bold text-lg lg:text-2xl 2xl:text-4xl text-main-800">
+              Solar Panels & Turbines
+            </h1>
+
+            <div className="rounded-[2rem] bg-white/40">
+              <Image
+                className={
+                  "object-cover object-contain rounded-[2rem] h-[35rem] w-full"
+                }
+                src={
+                  "https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg"
+                }
+                alt={""}
+                width={400}
+                height={400}
+              />
+            </div>
+          </div>
+          <div className="space-y-6 rounded-[2rem] p-5">
+            <h1 className="font-bold text-lg lg:text-2xl 2xl:text-4xl text-main-800">
+              Battery
+            </h1>
+
+            <div className="rounded-[2rem] bg-white/40">
+              <Image
+                className={
+                  "object-cover object-contain rounded-[2rem] h-[35rem] w-full"
+                }
+                src={
+                  "https://impro.usercontent.one/appid/oneComWsb/domain/proytenamg.com/media/proytenamg.com/onewebmedia/domestic_rack.jpg?etag=%2219261-63ff182c%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=328%2B284&quality=85"
+                }
+                alt={""}
+                width={400}
+                height={400}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Featured Product - AMG Proyten Hybrid Synchronizer */}
       <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -260,35 +307,40 @@ export default function ProductsPage() {
       {/* Sticky Section */}
       <div
         className={cn(
-          "flex flex-col gap-12 items-center justify-center w-full py-20"
+          "flex flex-col gap-20 items-center justify-center w-full py-20"
         )}
       >
         <ProductCard
           title="EP500PRO"
           model={"Power Station"}
-          productImage={"/products/solar_lil.png"}
-          capacity={["3000W / 5120Wh", "6000W / 10240Wh"]}
-          capacityHeader="AC Output/Capacity"
-        />
-
-        <ProductCard
-          title="Product Title"
-          model={"Power Station"}
           productImage={
-            "https://images.unsplash.com/photo-1605191738062-c861b8afebc1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGJhdHRlcnl8ZW58MHx8MHx8fDA%3D"
+            "https://impro.usercontent.one/appid/oneComWsb/domain/proytenamg.com/media/proytenamg.com/onewebmedia/Schermata%202023-03-01%20alle%2011.01.32.png?etag=%22169d86-63ff22aa%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=407%2B518"
           }
           capacity={["3000W / 5120Wh", "6000W / 10240Wh"]}
           capacityHeader="AC Output/Capacity"
+          pdf={"/document/Bluetti Products 2022.pdf"}
         />
 
         <ProductCard
-          title="Product Title"
-          model={"Power Station"}
+          title="Industrial Salt Storage"
+          model={"Proyten"}
           productImage={
-            "https://images.unsplash.com/photo-1605191738062-c861b8afebc1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGJhdHRlcnl8ZW58MHx8MHx8fDA%3D"
+            "https://impro.usercontent.one/appid/oneComWsb/domain/proytenamg.com/media/proytenamg.com/onewebmedia/salt_storage.jpg?etag=W%2F%22102a8-64147352%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=625%2B414&quality=85"
           }
           capacity={["3000W / 5120Wh", "6000W / 10240Wh"]}
           capacityHeader="AC Output/Capacity"
+          pdf={"/document/Bluetti Products 2022.pdf"}
+        />
+
+        <ProductCard
+          title="Industrial"
+          model={"Rack"}
+          productImage={
+            "https://impro.usercontent.one/appid/oneComWsb/domain/proytenamg.com/media/proytenamg.com/onewebmedia/industrial_rack.jpg?etag=%222346f-63ff180c%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=293%2B254&quality=85"
+          }
+          capacity={["3000W / 5120Wh", "6000W / 10240Wh"]}
+          capacityHeader="AC Output/Capacity"
+          pdf={"/document/Bluetti Products 2022.pdf"}
         />
       </div>
     </div>

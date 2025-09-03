@@ -15,14 +15,14 @@ const ProductSection = () => {
       {/* Section 1 */}
       <div className={"grid grid-cols-2 gap-3 h-full"}>
         <div className="flex items-center justify-center bg-main-800 rounded-lg h-full">
-          <p className="text-main-50 uppercase text-lg lg:text-6xl 2xl:text-[5.5rem] font-bold -rotate-90">
+          <p className="text-main-50 uppercase tracking-wider text-lg lg:text-6xl 2xl:text-[5.5rem] font-bold -rotate-90">
             Products
           </p>
         </div>
-        <div className="grid grid-row-4 gap-3 rounded-lg h-full">
+        <div className="grid grid-row-5 gap-3 rounded-lg h-full">
           <div
             className={
-              "row-span-3 rounded-lg bg-[url('https://images.unsplash.com/photo-1637525609391-ab1919948bbc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdyZWVuJTIwZW5lcmd5fGVufDB8fDB8fHww')] bg-cover bg-center"
+              "row-span-4 rounded-lg bg-[url('https://images.unsplash.com/photo-1637525609391-ab1919948bbc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdyZWVuJTIwZW5lcmd5fGVufDB8fDB8fHww')] bg-cover bg-center"
             }
           ></div>
           <div

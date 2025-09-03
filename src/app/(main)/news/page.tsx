@@ -2,6 +2,7 @@ import { Search } from "lucide-react";
 import HeroLayout from "@/components/general/hero-layout";
 import MenuBar from "@/components/navigation/menu";
 import { FeaturedNewsCard, NewsCard } from "@/components/news/news-card";
+import { Input } from "@/components/ui/input";
 import { newsArticles } from "@/common/data";
 
 export default function NewsPage() {
@@ -42,19 +43,25 @@ export default function NewsPage() {
       </div>
 
       {/* Search and Filter Section */}
-      <div className="py-12 border-b border-gray-200">
-        <div className="grid grid-cols-3">
-          <div className="bg-main-800 col-span-1">
-            <p className={"text-main-50"}>Search for something</p>
+      <div className="border-b border-gray-200">
+        <div className="h-[10rem] grid grid-cols-1 md:grid-cols-3">
+          <div className="flex items-center justify-center bg-main-800 col-span-1">
+            <p
+              className={
+                "text-main-50 font-bold text-2xl lg:text-4xl 2xl:text-5xl"
+              }
+            >
+              Search for AMG Articles
+            </p>
           </div>
-          <div className="col-span-2 flex flex-col md:flex-row gap-6 items-center justify-between">
+          <div className="col-span-2 flex flex-col md:flex-row items-center justify-between">
             {/* Search Bar */}
-            <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-              <input
+            <div className="relative flex-1 w-full">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-6 h-6" />
+              <Input
                 type="text"
                 placeholder="Search articles..."
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:ring-2 focus:ring-main-500 focus:border-transparent transition-colors duration-300"
+                className="rounded-none w-full h-[10rem] pl-10 pr-4 py-3 border border-main-800 focus:ring-0 focus:ring-main-800 focus:border-transparent duration-300 focus-visible:border-main-800 !text-2xl placeholder:!text-2xl"
               />
             </div>
           </div>

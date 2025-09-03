@@ -7,18 +7,6 @@ interface IProductPreviewCard {
   description: string;
 }
 
-<div className="flex-1 flex justify-center items-center">
-  <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden">
-    <Image
-      className="object-contain object-center w-full h-full"
-      src={"/products/solar_lil.png"}
-      alt="Solar Project Image 1"
-      fill
-      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-    />
-  </div>
-</div>;
-
 const ProductPreviewCard: FC<IProductPreviewCard> = ({
   imageUrl,
   title,
@@ -26,10 +14,9 @@ const ProductPreviewCard: FC<IProductPreviewCard> = ({
 }) => {
   return (
     <div className={"border border-main-800/20 rounded-lg p-6"}>
-      <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden">
+      <div className="relative w-full h-64 md:h-80 lg:h-[28rem] 2xl:h-[45rem] rounded-lg overflow-hidden">
         <Image
           className="object-contain object-center w-full h-full"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           src={imageUrl}
           alt={title}
           fill
