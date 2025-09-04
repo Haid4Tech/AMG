@@ -99,53 +99,6 @@ export default function ProductsPage() {
       {/* Use cases */}
       <UseCases />
 
-      {/* Product Categories */}
-      <div className={cn(pagePadding, "space-y-12")}>
-        <h3 className="font-bold text-5xl text-center">
-          What Kinds of Products Do we have
-        </h3>
-        <div className={"grid grid-cols-2 gap-6"}>
-          <div className="space-y-6 rounded-[2rem] p-5">
-            <h1 className="font-bold text-lg lg:text-2xl 2xl:text-4xl text-main-800">
-              Solar Panels & Turbines
-            </h1>
-
-            <div className="rounded-[2rem] bg-white/40">
-              <Image
-                className={
-                  "object-cover object-contain rounded-[2rem] h-[35rem] w-full"
-                }
-                src={
-                  "https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg"
-                }
-                alt={""}
-                width={400}
-                height={400}
-              />
-            </div>
-          </div>
-          <div className="space-y-6 rounded-[2rem] p-5">
-            <h1 className="font-bold text-lg lg:text-2xl 2xl:text-4xl text-main-800">
-              Battery
-            </h1>
-
-            <div className="rounded-[2rem] bg-white/40">
-              <Image
-                className={
-                  "object-cover object-contain rounded-[2rem] h-[35rem] w-full"
-                }
-                src={
-                  "https://impro.usercontent.one/appid/oneComWsb/domain/proytenamg.com/media/proytenamg.com/onewebmedia/domestic_rack.jpg?etag=%2219261-63ff182c%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=328%2B284&quality=85"
-                }
-                alt={""}
-                width={400}
-                height={400}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Featured Product - AMG Proyten Hybrid Synchronizer */}
       {/* <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-gray-50">
         <div className="max-w-6xl mx-auto">
