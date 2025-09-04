@@ -19,7 +19,7 @@ export default function AboutPage() {
 
       {/* Company Overview */}
       <div className={cn(pagePadding)}>
-        <div className="flex flex-col items-center justify-center py-20 space-y-6 px-3 md:px-8 lg:px-20 2xl:px-32">
+        <div className="flex flex-col items-center justify-center space-y-6">
           <Badge variant={"amg"}>Our story</Badge>
           <div className="space-y-6">
             <p className="text-justify text-base lg:text-xl 2xl:text-2xl  text-main-700 leading-relaxed">
@@ -44,7 +44,7 @@ export default function AboutPage() {
       </div>
 
       {/* Key Products */}
-      <div className={cn(pagePadding, "space-y-6 border  border-red-500")}>
+      {/* <div className={cn(pagePadding, "space-y-6 border  border-red-500")}>
         <h3 className="text-2xl font-bold text-main-900">Key Products</h3>
         <div className="space-y-4">
           <div className="flex items-start gap-3">
@@ -79,14 +79,14 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Mission & Vision Section */}
       <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-main-900 mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-main-800 mb-6">
                 Our Mission
               </h2>
               <p className="text-lg text-main-700 leading-relaxed">
@@ -98,7 +98,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-main-800 mb-4">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-900 mb-6">
                 Our Vision
               </h3>
               <p className="text-lg text-main-700 leading-relaxed">
@@ -109,15 +109,14 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+          <div>
+            <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden">
               <Image
-                src="/images/bg-1.jpg"
+                src="/SVG/homepage-house-illo.svg"
                 alt="AMG Mission and Vision"
                 fill
-                className="object-cover object-center"
+                className="object-contain object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-main-900/60 to-transparent"></div>
             </div>
           </div>
         </div>
@@ -193,7 +192,7 @@ export default function AboutPage() {
       </div>
 
       {/* Team Section */}
-      <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-gray-50">
+      {/* <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-main-900 mb-6">
@@ -246,10 +245,10 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* CTA Section */}
-      <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-main-900">
+      {/* <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-main-900">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Ready to Work Together?
@@ -262,7 +261,7 @@ export default function AboutPage() {
             Get in Touch
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

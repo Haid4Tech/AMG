@@ -11,7 +11,7 @@ export const UseCases = () => {
             <span className="text-secondary-500 uppercase">Solutions</span> for
             Diverse Needs
           </h3>
-          <p className="text-2xl">
+          <p className="lg:text-lg 2xl:text-2xl">
             Our products are built with versatility in mind, offering solutions
             that fit seamlessly into different lifestyles and industries.
             Whether it’s for everyday use or specialized applications, each
@@ -21,7 +21,7 @@ export const UseCases = () => {
         </div>
 
         <div>
-          <p className="text-2xl">
+          <p className="lg:text-lg 2xl:text-2xl">
             Take a moment to explore our collection and discover how our
             products can make a difference for you.
           </p>
@@ -31,7 +31,7 @@ export const UseCases = () => {
       <div className="col-span-2 space-y-5">
         <div className="grid grid-cols-3 gap-5">
           <Image
-            className="col-span-2 w-full rounded-[2rem] object-cover object-center h-[25rem]"
+            className="col-span-2 w-full rounded-[2rem] object-cover object-center h-[18rem] 2xl:h-[25rem]"
             src={
               "https://images.pexels.com/photos/9799737/pexels-photo-9799737.jpeg"
             }
@@ -41,7 +41,7 @@ export const UseCases = () => {
           />
 
           <Image
-            className="col-span-1 w-full rounded-[2rem] object-cover object-center h-[25rem]"
+            className="col-span-1 w-full rounded-[2rem] object-cover object-center h-[18rem] 2xl:h-[25rem]"
             src={
               "https://images.pexels.com/photos/9799724/pexels-photo-9799724.jpeg"
             }
@@ -53,7 +53,7 @@ export const UseCases = () => {
 
         <div className="grid grid-cols-3 gap-5">
           <Image
-            className="col-span-1 w-full rounded-[2rem] object-cover object-center h-[25rem]"
+            className="col-span-1 w-full rounded-[2rem] object-cover object-center h-[18rem] 2xl:h-[25rem]"
             src={
               "https://images.pexels.com/photos/9875407/pexels-photo-9875407.jpeg"
             }
@@ -63,7 +63,7 @@ export const UseCases = () => {
           />
 
           <Image
-            className="col-span-2 w-full rounded-[2rem] object-cover object-center h-[25rem]"
+            className="col-span-2 w-full rounded-[2rem] object-cover object-center h-[18rem] 2xl:h-[25rem]"
             src={
               "https://images.pexels.com/photos/23355060/pexels-photo-23355060.jpeg"
             }

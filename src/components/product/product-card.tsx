@@ -39,7 +39,7 @@ const ProductCard: FC<IProductCard> = ({
             height={300}
           />
         </div>
-        <div className="flex flex-col items-stretch gap-8 border border-red-500">
+        <div className="flex flex-col items-stretch gap-8">
           <h2 className="lg:text-4xl 2xl:text-5xl font-bold">{title}</h2>
 
           {/* Product Capacity */}
@@ -67,7 +67,7 @@ const ProductCard: FC<IProductCard> = ({
             </div>
           </div>
 
-          <Button className="w-fit mt-auto bg-secondary-500">
+          <Button size={"lg"} className="w-fit mt-auto bg-secondary-500">
             <Link target="_blank" href={pdf}>
               View Specifications
             </Link>
