@@ -6,6 +6,7 @@ import ProductHeroSection from "@/components/product/product-hero-section";
 import ProductCard from "@/components/product/product-card";
 import { cn } from "@/lib/utils";
 import { pagePadding } from "@/common/styles";
+import { UseCases } from "@/components/product/use-cases";
 
 export default function ProductsPage() {
   const productCategories = [
@@ -95,6 +96,9 @@ export default function ProductsPage() {
         <ProductHeroSection />
       </HeroVideoLayout>
 
+      {/* Use cases */}
+      <UseCases />
+
       {/* Product Categories */}
       <div className={cn(pagePadding, "space-y-12")}>
         <h3 className="font-bold text-5xl text-center">
@@ -143,7 +147,7 @@ export default function ProductsPage() {
       </div>
 
       {/* Featured Product - AMG Proyten Hybrid Synchronizer */}
-      <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-gray-50">
+      {/* <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-main-900 mb-6">
@@ -223,10 +227,10 @@ export default function ProductsPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Technology Showcase */}
-      <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54">
+      {/* <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-main-900 mb-6">
@@ -280,10 +284,10 @@ export default function ProductsPage() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* CTA Section */}
-      <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-main-900">
+      {/* <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54 bg-main-900">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Ready to Get Started?
@@ -302,7 +306,7 @@ export default function ProductsPage() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Sticky Section */}
       <div
