@@ -82,8 +82,8 @@ export default function AboutPage() {
       </div> */}
 
       {/* Mission & Vision Section */}
-      <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className={cn(pagePadding)}>
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-main-800 mb-6">
@@ -123,8 +123,8 @@ export default function AboutPage() {
       </div>
 
       {/* Values Section */}
-      <div className="py-20 px-6 md:px-10 lg:px-26 2xl:px-54">
-        <div className="max-w-6xl mx-auto">
+      <div className={cn(pagePadding)}>
+        <div className="mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-main-900 mb-6">
               Our Core Values
